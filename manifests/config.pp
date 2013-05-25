@@ -1,0 +1,3 @@
+class heroku::config {
+
+}
