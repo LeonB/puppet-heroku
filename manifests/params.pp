@@ -20,7 +20,7 @@ class heroku::params {
 		default => ['libpq-dev']
 	}
 
-    $gems $::operatingsystem ? {
+    $gems = $::operatingsystem ? {
         default => ['heroku']
     }
 
