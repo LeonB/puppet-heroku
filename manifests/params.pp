@@ -14,16 +14,16 @@
 #
 class heroku::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['libpq-dev']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['libpq-dev']
+  }
 
     $gems = $::operatingsystem ? {
         default => ['heroku']
     }
 
-	$enabled = true
+  $enabled = true
 
 }
